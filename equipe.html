@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>GH Webdesign</title>
-        <meta charset="UTF-8" />
-
+        <title>Equipe</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css"> <!-- caminho para linkar o css à página -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- família de font do google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="container">
-           
         <header id="cabecalho">
-            <!--conteudo do cabeçalho--> 
-            <h1>GH Webdesign</h1>
-            <!--estrutura do menu-->
-            <nav id="menuprincipal">
-                <ol>
+        <!-- início cabeçalho-->
+             <img class="logo-ghn" src="./imagens/logo.png" alt="Logo GHN Webdesign">
+            <!--início menu navegação lateral -->
+            <nav id="menu-principal">
+                <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="equipe.html">EQUIPE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contato.html">CONTATO</a></li>
-                </ol>
+                </ul>
             </nav>
         </header>    
         <section id="corpo">
-            <!--conteudo da página do site-->
-            conteúdo do site
+            <!--início página equipe -->
+            <div class="equipe">
+                <h1>Nossos serviços:</h1>
+                <p>Nossa equipe de desenvolvedores é composta pelo Gabriel Hogan e pela Natália Lavarda.
+                A GHN Webdesign é uma empresa especializada em desenvolvimento de interfaces digitais, como layout de sites e aplicativos para a web.
+                Prezamos por layouts modernos e responsivos, levando aos nossos usuários a melhor experiência no meio digital.
+                </p>
+                <h1>Conheça nossa equipe:</h1>
+                <h3>Natália Lavarda</h3>
+                <p>Olá! Eu sou a Natália, desenvolvedora Front-End da NHG Webdesign. Sou uma pessoa apaixonada por tecnologia e as oportunidades que ela proporciona, além do aprendizado constante em busca de uma solução. Possuo uma personalidade curiosa, dinâmica, e extremamente atenta aos detalhes. Por isso, amo estar em contato com o desenvolvimento Front-End e UX/UI Design. Meu objetivo é entregar layouts e códigos limpos, bonitos e funcionais, tornando a experiência do usuário agradável.<br>
+                Mas não só de tecnologia essa mulher vive! Amo cuidar de plantas e atualmente cuido de 15 espécies no meu quintal :) Passo a maior parte do meu tempo livre lendo romances e ficções, ou então maratonando séries.</p>
+                <img src="./imagens/natalia.jpg" style="width: 15%;" alt="Foto da desenvolvedora Natália Lavarda">
+                <div class="redes-sociais natalia">
+                    <a href="https://www.instagram.com/natalialavarda/" target="_blank"><img src="imagens/instagram.png" alt="Logo Instagram"></a>
+                    <a href="https://github.com/natalia-lavarda" target="_blank"><img src="imagens/github.png" alt="Logo Github"></a>
+                </div>
+                <h3>Gabriel Hogan</h3>
+                <p></p>
+                <img src="" alt="Foto do desenvolvedor Gabriel Hogan">
+                <div class="redes-sociais gabriel">
+                    <a href="https://www.instagram.com/gabriel_hogan/" target="_blank"><img src="imagens/instagram.png" alt="Logo Instagram"></a>
+                    <a href="https://github.com/gabhogan" target="_blank"><img src="imagens/github.png" alt="Logo Github"></a>
+                </div>
+            </div>
         </section>
+        <!-- início rodapé-->
         <footer id="rodape">
-            <!--conteudo do rodapé-->
-            <p><a href="https://www.instagram.com/gabriel_hogan/" target="_blank"><img src="imagens/instagram.png" alt="Logo Instagram"></a>
-            <a href="https://github.com/gabhogan" target="_blank"><img src="imagens/github.png" alt="Logo Github"></a> </p>
-            <p>Copyrigth 2021 by GH Webdesign.</p>
+            <p>Copyrigth 2021 by GHN Webdesign | ghnwebdesign@gmail.com</p>
+            <div class="redes-sociais ghn">
+                <a href="https://www.instagram.com/ghn_webdesign/" target="_blank"><img src="imagens/instagram.png" alt="Logo Instagram"></a>
+                <a href="https://github.com/ghn_webdesign" target="_blank"><img src="imagens/github.png" alt="Logo Github"></a>
+            </div>
         </footer>
-        </div>
+        <!-- fim rodapé-->
     </body>
 </html>
