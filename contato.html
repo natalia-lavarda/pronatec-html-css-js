@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>GH Webdesign</title>
-        <meta charset="UTF-8" />
-
+        <title>Contato</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style.css"> <!-- caminho para linkar o css à página -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- família de font do google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="container">
-           
         <header id="cabecalho">
-            <!--conteudo do cabeçalho--> 
-            <h1>GH Webdesign</h1>
-            <!--estrutura do menu-->
-            <nav id="menuprincipal">
-                <ol>
+        <!-- início cabeçalho-->
+             <img class="logo-ghn" src="./imagens/logo.png" alt="Logo GHN Webdesign">
+            <!--início menu navegação lateral -->
+            <nav id="menu-principal">
+                <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="equipe.html">EQUIPE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contato.html">CONTATO</a></li>
-                </ol>
+                </ul>
             </nav>
         </header>    
         <section id="corpo">
-            <!--conteudo da página do site-->
-            conteúdo do site
+            <!--início página contato -->
+            <div class="formulario-contato">
+                <h1>Contato</h1>
+                <form action="">
+                    <fieldset>
+                        <legend>Insira seu e-mail e sua mensagem para entrarmos em contato com você:</legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+                        <label class="mensagem" for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                    </fieldset>
+                    <div class="formulario-botao">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </section>
+        <!-- início rodapé-->
         <footer id="rodape">
-            <!--conteudo do rodapé-->
-            <p><a href="https://www.instagram.com/gabriel_hogan/" target="_blank"><img src="imagens/instagram.png" alt="Logo Instagram"></a>
-            <a href="https://github.com/gabhogan" target="_blank"><img src="imagens/github.png" alt="Logo Github"></a> </p>
-            <p>Copyrigth 2021 by GH Webdesign.</p>
+            <p>Copyrigth 2021 by GHN Webdesign | ghnwebdesign@gmail.com</p>
+            <div class="redes-sociais ghn">
+                <a href="https://www.instagram.com/ghn_webdesign/" target="_blank"><img src="imagens/instagram.png" alt="Logo Instagram"></a>
+                <a href="https://github.com/ghn_webdesign" target="_blank"><img src="imagens/github.png" alt="Logo Github"></a>
+            </div>
         </footer>
-        </div>
+        <!-- fim rodapé-->
     </body>
 </html>
