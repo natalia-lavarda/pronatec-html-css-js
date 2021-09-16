@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 2px;
+}
+
+/* ---------------------- CABEÇALHO ---------------------- */
+
+.cabecalho {
+    width: 100%;
+    height: 40vh;
+}
+
+.menu-principal {
+    width: 100%;
+    height: 10vh;
+    background-color: #e7e7e7;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-principal_logo {
+    margin-left: 1rem;
+}
+
+.menu-principal_navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-right: 1rem;
+    list-style: none;  
+}
+
+.menu-principal_navegacao li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    font-weight: 600;
+}
+
+.menu-principal_navegacao li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-principal_navegacao li a:hover {
+    background-color: #a1a1a1;
+    color: #fff;
+}
+
+.banner {
+    height: 40vh;
+    margin-top: 10vh;
+    background: linear-gradient(rgba(167, 176, 255, 0.5), rgba(149, 159, 253, 0.5)), url(../imagens/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    width: 20%;
+    font-size: 2.5rem;
+    color: #00095F;
+}
+
+/* ---------------------- CORPO PÁGINA PRINCIPAL ---------------------- */
+.corpo {
+    width: 80%;
+    padding: 5vh;
+    margin: 5vh auto;
+    background: #e7e7e7;
+}
+
+.postagem, .servicos, .equipe {
+    background: #eeeeee;
+    margin: 5vh;
+    padding: 5vh;
+    color: #000;
+}
+
+.postagem h1 {
+    font-size: 2rem;
+    margin-bottom: 3vh;
+    color: #040b4e;
+}
+
+.postagem h3 {
+    margin-bottom: 3vh;
+}
+
+.postagem p {
+    text-align: justify;
+    margin-bottom: 2vh;
+}
+
+.postagem p a {
+    color: #FF9696;
+    font-weight: 600;
+    margin-left: -1vh;
+    padding: 1vh;
+}
+
+.postagem p a:hover {
+    background-color: #FF9696;
+    color: #040b4e;
+    font-weight: 600;
+}
+
+/* ---------------------- CORPO PÁGINA EQUIPE ---------------------- */
+
+.servicos h1, .equipe h1 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+    color: #040b4e;
+}
+
+.servicos p {
+    margin: auto;
+    background-color: #fadddd;
+    font-size: 1.1em;
+    padding: 2vh;
+}
+
+.equipe p {
+    width: 90%;
+    margin: 3vh auto;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.integrantes {
+    display: flex;
+}
+
+.natalia, .gabriel {
+    width: 50%;
+    padding: 2vh;
+    background-color: #fadddd;
+}
+
+.natalia {
+    margin-right: 5vh;
+}
+
+.gabriel {
+    margin-left: 5vh;
+}
+
+.equipe_redes-sociais {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.titulo-foto {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.titulo-foto h3 {
+    font-size: 2rem;
+    margin-left: 1vh;
+}
+
+/* ---------------------- RODAPÉ ---------------------- */
+footer {
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+footer p {
+    color: #00095F;
+    font-weight: 600;
+}
