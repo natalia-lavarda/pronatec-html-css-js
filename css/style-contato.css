@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 2px;
+}
+
+/* ---------------------- CABEÇALHO ---------------------- */
+/* Mesma configuração utilizada nas outras páginas */
+.cabecalho {
+    width: 100%;
+    height: 40vh;
+}
+
+/* Menu com posição fixa para que caso o usuário desça a página, continue vendo-o.
+O display é flex row para configurar a logo com o menu navegação */
+.menu-principal {
+    width: 100%;
+    height: 10vh;
+    background-color: #e7e7e7;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-principal_logo {
+    margin-left: 1rem;
+}
+
+/* Display flex no menu navegação para configurar o link das páginas */
+.menu-principal_navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-right: 1rem;
+    list-style: none;  
+}
+
+/* Aqui estou definindo uma classe para cada li da lista */
+.menu-principal_navegacao li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    font-weight: 600;
+}
+
+/* Aqui estou definindo uma classe para cada link da lista, que será direcionado para as páginas */
+.menu-principal_navegacao li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* O hover muda de cor quando o mouse está em cima da página */
+.menu-principal_navegacao li a:hover {
+    background-color: #a1a1a1;
+    color: #fff;
+}
+
+/* Para a div com classe banner, optei pelo display flex para configurar o conteúdo escrito que está dentro dessa div 
+e definir um background */
+.banner {
+    height: 40vh;
+    margin-top: 10vh;
+    background: linear-gradient(rgba(167, 176, 255, 0.5), rgba(149, 159, 253, 0.5)), url(../imagens/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aqui configuro somente os h1 da div com a classe banner */
+.banner h1 {
+    width: 20%;
+    font-size: 2.5rem;
+    color: #00095F;
+}
+
+/* Troquei o migalha de pão por esse id atual, quando o usuário está na página home, o link do menu ficará com a cor do hover*/
+#atual a {
+    background-color: #a1a1a1;
+    color: #fff;
+}
+
+/* ---------------------- CORPO PÁGINA CONTATO ---------------------- */
+/* Para a página contato utilizei basicamente ids, visto que esse estilo não será repetido */
+#contato_corpo {
+    width: 80%;
+    padding: 5vh;
+    margin: 5vh auto;
+    background: #e7e7e7;
+}
+
+#formulario-contato {
+    width: 80%;
+    margin: 3vh auto;
+}
+
+#formulario-contato h1 {
+    font-size: 2.2rem;
+    color: #00095F;
+    margin-bottom: 2vh;
+}
+
+#formulario-contato p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1vh;
+}
+
+/* Configurando a largura e altura do formulário*/
+#formulario-contato form {
+    width: 100%;
+    margin: auto;
+}
+
+/* Configurando a largura e altura do fieldset, utilizei flex column para os campos ficarem um abaixo do outro */
+#formulario-contato form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2vh;
+    border: 2px solid #00095F;
+    margin-bottom: 5vh;
+}
+
+/* Configurando a legenda do fieldset */
+
+#formulario-contato legend {
+    margin-left: 2vh;
+    padding: 1vh;
+    font-size: 1.1rem;
+    margin-bottom: 1vh;
+    font-weight: 600;
+    color: #00095F;
+}
+
+/* Adicionando espaçamento abaixo dos labels do formulário */
+#formulario-contato label {
+    margin-bottom: 1vh;
+}
+
+/* Configurando os inputs */
+#formulario-contato input {
+    width: 40%;
+    margin-bottom: 1vh;
+    font-size: 0.9rem;
+}
+
+/* Configurando o textarea */
+#formulario-contato textarea {
+    width: 50%;
+    margin-bottom: 5vh;
+    font-size: 0.9rem;
+    resize: none;
+    height: 20vh;
+}
+
+/* Tirando a borda preta que aparecia quando clicava no input para digitar */
+input:focus, textarea:focus {
+    outline: 0;
+    padding: 5px;
+}
+
+/* Configurando o espaçamento dos placeholders */
+input::placeholder, textarea::placeholder {
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+/* Configurando o botão enviar */
+#formulario-botao {
+    width: 30%;
+}
+
+#formulario-botao input {
+    cursor: pointer;
+    padding: 1vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FF9696;
+    color: #00095F;
+    transition: 0.5s all;
+    border: none;
+}
+
+#formulario-botao input:hover {
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #ff4444;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* ---------------------- RODAPÉ ---------------------- */
+/* No rodapé optei por não utilizar nenhuma classe ou id, pois será o mesmo em todas as páginas (e só teremos 1) */
+footer {
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+footer p {
+    color: #00095F;
+    font-weight: 600;
+}
