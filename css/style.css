@@ -13,12 +13,15 @@ a {
 }
 
 /* ---------------------- CABEÇALHO ---------------------- */
-
+/* Utilizei classes para o cabeçalho pois este terá o mesmo para todas as páginas,
+como será repetido nelas, utilizou-se classes e não ids */
 .cabecalho {
     width: 100%;
     height: 40vh;
 }
 
+/* Menu com posição fixa para que caso o usuário desça a página, continue vendo-o.
+O display é flex row para configurar a logo com o menu navegação */
 .menu-principal {
     width: 100%;
     height: 10vh;
@@ -33,37 +36,45 @@ a {
     margin-left: 1rem;
 }
 
+/* Display flex no menu navegação para configurar o link das páginas */
 .menu-principal_navegacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 30%;
     margin-right: 1rem;
-    list-style: none;  
+    list-style: none;
+    
 }
 
+/* Aqui estou definindo uma classe para cada li da lista */
 .menu-principal_navegacao li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 100%;
     height: 100%;
     font-weight: 600;
 }
 
+/* Aqui estou definindo uma classe para cada link da lista, que será direcionado para as páginas */
 .menu-principal_navegacao li a {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
+/* O hover muda de cor quando o mouse está em cima da página */
 .menu-principal_navegacao li a:hover {
     background-color: #a1a1a1;
     color: #fff;
 }
 
+/* Para a div com classe banner, optei pelo display flex para configurar o conteúdo escrito que está dentro dessa div 
+e definir um background */
 .banner {
     height: 40vh;
     margin-top: 10vh;
@@ -76,13 +87,21 @@ a {
     align-items: center;
 }
 
+/* Aqui configuro somente os h1 da div com a classe banner */
 .banner h1 {
     width: 20%;
     font-size: 2.5rem;
     color: #00095F;
 }
 
+/* Troquei o migalha de pão por esse id atual, quando o usuário está na página home, o link do menu ficará com a cor do hover*/
+#atual a {
+    background-color: #a1a1a1;
+    color: #fff;
+}
+
 /* ---------------------- CORPO PÁGINA PRINCIPAL ---------------------- */
+/* As classes do corpo também será reaproveitado nas outras sessões */
 .corpo {
     width: 80%;
     padding: 5vh;
@@ -90,6 +109,10 @@ a {
     background: #e7e7e7;
 }
 
+/* Aqui selecionou-se as classes servicos e equipe (que estão na página equipe) 
+junto com a postagem pois possuem a mesma configuração de background, cor de letra, margin e padding,
+porém para facilitar o entendimento utilizei nomes diferentes em cada página.
+A classe postagem é repetida em várias divs, por isso optou-se utilizar classe e não id */
 .postagem, .servicos, .equipe {
     background: #eeeeee;
     margin: 5vh;
@@ -97,11 +120,14 @@ a {
     color: #000;
 }
 
-.postagem h1 {
+/* Aqui seleciono o h1, h3, p e a somente da classe postagem.
+A página blog está com um a dentro do h1 para linkar com o leia mais do index, por isso coloquei a mesma configuração do h1 do index */
+.postagem h1, .postagem a {
     font-size: 2rem;
     margin-bottom: 3vh;
     color: #040b4e;
 }
+
 
 .postagem h3 {
     margin-bottom: 3vh;
@@ -112,11 +138,13 @@ a {
     margin-bottom: 2vh;
 }
 
+/* Coloquei uma transição para o hover para dar um efeito mais lento quanto passar o mouse */
 .postagem p a {
     color: #FF9696;
     font-weight: 600;
     margin-left: -1vh;
     padding: 1vh;
+    transition: 0.5s all;
 }
 
 .postagem p a:hover {
@@ -125,46 +153,69 @@ a {
     font-weight: 600;
 }
 
-/* ---------------------- CORPO PÁGINA EQUIPE ---------------------- */
+/* Configurando o tamanho do link ler mais */
+.ler-mais a {
+    font-size: 1rem;
+}
 
-.servicos h1, .equipe h1 {
+/* ---------------------- CORPO PÁGINA EQUIPE ---------------------- */
+/* A partir deste ponto estilizo a página equipe e nela possuímos uma div para serviços e equipe que só serão utilizadas na página equipe,
+por isso cada uma é caracterizada por um id */
+#servicos, #equipe {
+    width: 80%;
+    margin: 5vh auto;
+}
+#servicos h1, #equipe h1 {
     font-size: 2rem;
     margin-bottom: 2vh;
     color: #040b4e;
 }
 
-.servicos p {
-    margin: auto;
-    background-color: #fadddd;
+#servicos p {
+    margin: 5vh auto;
     font-size: 1.1em;
     padding: 2vh;
+    text-align: justify;
 }
 
-.equipe p {
-    width: 90%;
+#equipe p {
+    width: 80%;
     margin: 3vh auto;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
-.integrantes {
+/* Utilizo o display flex na div integrantes para deixar um ao lado do outro */
+#integrantes {
     display: flex;
+    justify-content: space-around;
 }
 
-.natalia, .gabriel {
-    width: 50%;
+/* Utilizo um id natalia e gabriel pois temos aplicações diferentes de margem para cada div */
+#natalia, #gabriel {
+    width: 80%;
     padding: 2vh;
+    margin-top: 2vh;
     background-color: #fadddd;
+    box-shadow: 1px 1px 2px #d49d9d;
+    border-radius: 1vh;
+    transition: 0.5s all;
 }
 
-.natalia {
+/* Efeito para dar zoom na caixa do integrante da equipe quando passa o mouse em cima */
+#natalia:hover, #gabriel:hover {
+    transform: scale(1.1);
+}
+
+#natalia {
     margin-right: 5vh;
 }
 
-.gabriel {
+#gabriel {
     margin-left: 5vh;
 }
 
+/* Para equipe_redes-sociais, titulo-foto e perfil utilizei classes pois repeti as propriedades para a div natalia e gabriel */
 .equipe_redes-sociais {
     display: flex;
     width: 25%;
@@ -188,7 +239,27 @@ a {
     margin-left: 1vh;
 }
 
+/* ---------------------- CORPO PÁGINA BLOG ---------------------- */
+/* A página blog já está com todas as estilizações do index, por isso só estilizei os vídeos e as imagens */
+.postagem img {
+    width: 30%;
+    float: right;
+    padding: 0 2vh;
+}
+
+/* A class video está para configurar o tamanho dos inframes, como é repetida 3x, utilizei class e não ids */
+.video {
+    width: 40%;
+    height: 30vh;
+}
+
+/* Como configuramos o link da classe postagem, criei uma classe fonte para configurar o tamanho da fonte do link relacionado a elas */
+.fonte a {
+    font-size: 2.1vh;
+}
+
 /* ---------------------- RODAPÉ ---------------------- */
+/* No rodapé optei por não utilizar nenhuma classe ou id, pois será o mesmo em todas as páginas (e só teremos 1) */
 footer {
     background-color: #e7e7e7;
     display: flex;
