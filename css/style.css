@@ -263,12 +263,21 @@ por isso cada uma é caracterizada por um id */
 footer {
     background-color: #e7e7e7;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 5vh;
+    height: 15vh;
 }
 
-footer p {
+.redes-copyrigth {
+    text-align: center;
+}
+
+footer p, .script-data {
     color: #00095F;
     font-weight: 600;
+}
+
+.script-data {
+    margin-top: 1vh;
 }
