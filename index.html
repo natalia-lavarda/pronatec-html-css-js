@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        
         <!--início cabeçalho -->
         <header class="cabecalho">
             <nav class="menu-principal">
@@ -24,12 +25,17 @@
                 </ul>
             </nav>
             <div class="banner">
-                <h1>Conteúdos gratuitos sobre o mundo da tecnologia</h1>
+                <script>
+                    //Alert de boas vindas para o visitante presente no index
+                    alert("Olá, seja bem vindo!\n"+"Encontre aqui, conteúdos gratuitos sobre o mundo da tecnologia!");
+                </script>
+                <h1>Conteúdos gratuitos sobre o mundo da tecnologia!</h1>
             </div>
         </header>
         <!-- início conteúdo página principal -->
         <main>
             <section class="corpo">
+                
                 <div class="postagem">
                     <h1>Mulheres na tecnologia: como é atuar no mercado de TI</h1>
                     <h2>Por Natália Lavarda</h2>
@@ -67,11 +73,21 @@
                 </div>
             </section>
         </main>
+        
         <!-- início rodapé -->
         <footer>
             <p><a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png" alt="Logo Instagram"></a>
             <a href="https://github.com/" target="_blank"><img src="imagens/github.png" alt="Logo Github"></a> </p>
-            <p>Copyrigth 2021 by GHN Webdesign | ghnwebdesign@gmail.com</p>
+            <p>Copyrigth 2021 by GHN Webdesign | ghnwebdesign@gmail.com | </p>
+            
+            <p><script>
+                //script para adicionar a data em formato local(brasil)
+                var dataBrasil = new Date();
+                document.write(" | " + dataBrasil.toLocaleDateString());
+            </script></p>
+            
         </footer>
+        
     </body>
+    
 </html>

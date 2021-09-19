@@ -89,7 +89,7 @@ e definir um background */
 
 /* Aqui configuro somente os h1 da div com a classe banner */
 .banner h1 {
-    width: 20%;
+    width: 50%;
     font-size: 2.5rem;
     color: #00095F;
 }
